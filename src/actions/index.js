@@ -21,7 +21,7 @@ export function getCharacter() {
       })
       .catch(err => {
         console.log(err);
-        dispatch({ type: FAILURE, payload: err.res.data });
+        dispatch({ type: FAILURE, payload: err.response.data });
       });
   };
 }
